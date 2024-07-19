@@ -1,3 +1,5 @@
+"use client"
+
 import {
     Table,
     TableBody,
@@ -28,12 +30,16 @@ export function GameTable() {
     //        ).map((object: { uid: string }) => object.uid)
     //    )
     //);
+
+    function onSubmit(e) {
+
+    }
     return (
         <Table>
             <TableHeader>
                 <TableRow>
                     {categories.map((category) => (
-                        <TableHead className="w-[100px]" key={category.id}>{category.uid}</TableHead>
+                        <TableHead className="w-[100px] text-center" key={category.id}>{category.uid}</TableHead>
                     ))}
                 </TableRow>
             </TableHeader>
